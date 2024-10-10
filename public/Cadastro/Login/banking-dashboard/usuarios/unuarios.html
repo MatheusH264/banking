@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Usuários</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        .user-container {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .inativo {
+            color: red;
+        }
+
+        .ativo {
+            color: green;
+        }
+
+        .usuario-cancelado {
+            color: red;
+        }
+
+        .usuario-ativo {
+            color: black;
+        }
+
+        .star {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-container">
+        <h1>Sua empresa possui 6 usuários ativos no ambiente Cloud.</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Login</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Situação no CR.WK</th>
+                    <th>Usuário Cancelado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="star">Adriana</td>
+                    <td>Adriana</td>
+                    <td>adriana@gmail.com</td>
+                    <td class="inativo">Inativo</td>
+                    <td class="usuario-cancelado">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Andre</td>
+                    <td>André</td>
+                    <td>andre@gmail.com</td>
+                    <td class="ativo">Ativo</td>
+                    <td class="usuario-ativo">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Fabio</td>
+                    <td>Fabio</td>
+                    <td>fabio@gmail.com</td>
+                    <td class="ativo">Ativo</td>
+                    <td class="usuario-ativo">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Vitor</td>
+                    <td>Vitor</td>
+                    <td>vitor@gmail.com</td>
+                    <td class="ativo">Ativo</td>
+                    <td class="usuario-ativo">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Jose</td>
+                    <td>José</td>
+                    <td>jose@gmail.com</td>
+                    <td class="inativo">Inativo</td>
+                    <td class="usuario-cancelado">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Rodrigo</td>
+                    <td>Rodrigo</td>
+                    <td>rodrigo@gmail.com</td>
+                    <td class="inativo">Inativo</td>
+                    <td class="usuario-cancelado">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Willian</td>
+                    <td>Willian</td>
+                    <td>willian@gmail.com</td>
+                    <td class="inativo">Inativo</td>
+                    <td class="usuario-cancelado">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Mateus</td>
+                    <td>Mateus</td>
+                    <td>mateus@gmail.com</td>
+                    <td class="ativo">Ativo</td>
+                    <td class="usuario-ativo">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Luana</td>
+                    <td>Luana</td>
+                    <td>luana@gmail.com</td>
+                    <td class="ativo">Ativo</td>
+                    <td class="usuario-ativo">Não</td>
+                </tr>
+                <tr>
+                    <td class="star">Victoria</td>
+                    <td>Victoria</td>
+                    <td>victoria@gmail.com</td>
+                    <td class="ativo">Ativo</td>
+                    <td class="usuario-ativo">Não</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

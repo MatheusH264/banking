@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saldo</title>
+    <link rel="stylesheet" href="./general.css" />
+    <link rel="stylesheet" href="./layout.css" />
+  </head>
+  <body>
+    <main>
+      <section class="display-section">
+        <div class="balance-information flex-space">
+          <div>
+            <h2 class="secondary-heading">Saldo Atual</h2>
+          </div>
+          <h1 class="balance-amount" id="number">12040</h1>
+        </div>
+        <div class="analysis">
+          <div class="card card-positive">
+            <p class="card-title">Depositado</p>
+            <h3 class="deposit-total-card card-amount">3000</h3>
+          </div>
+          <div class="card card-negative">
+            <p class="card-title">Retirado</p>
+            <h3 class="withdraw-total-card card-amount">3000</h3>
+          </div>
+          <div class="card card-positive">
+            <p class="card-title">Recebido</p>
+            <h3 class="interest-total-card card-amount">3000</h3>
+          </div>
+        </div>
+        <div class="table-navigator flex-space">
+          <h3 class="card-amount">Transação</h3>
+        </div>
+        <div class="transactions"></div>
+      </section>
+      <section class="operations-container">
+        <div class="operations-data">
+          <div class="flex-space stat">
+            <h5 class="stats-heading">Retirada Média</h5>
+            <h5 class="stats-data avg-withdraw">1000$</h5>
+          </div>
+          <div class="flex-space stat">
+            <h5 class="stats-heading">Retirada Máxima</h5>
+            <h5 class="stats-data max-withdraw">20000$</h5>
+          </div>
+          <div class="flex-space stat">
+            <h5 class="stats-heading">Depósito Médio</h5>
+            <h5 class="stats-data avg-deposit">20000$</h5>
+          </div>
+        </div>
+        <div class="operations-data">
+          <button class="btn btn-transfer">Transferir Dinheiro</button>
+          <button class="btn btn-request">Solicitar Empréstimo</button>
+          <button class="btn btn-close">Fechar Conta</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./layout.js"></script>
+  </body>
+</html>

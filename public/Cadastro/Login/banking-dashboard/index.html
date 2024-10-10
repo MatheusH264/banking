@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">account_balance</span> Bank
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="Saldo/layout.html" target="_blank">
+              <span class="material-icons-outlined">inventory_2</span> Saldo
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="Saldo/layout.html" target="_blank">
+              <span class="material-icons-outlined">category</span> Extrato
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="usuarios/unuarios.html">
+              <span class="material-icons-outlined">groups</span> Contas
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#bar-chart" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> inventario
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#area-chart" target="_blank">
+              <span class="material-icons-outlined">poll</span> Rendimento
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Configuração
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>SALDO ATUAL</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h1>R$ 4.250,00</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>EXTRATOS DA CONTA</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>R$ 1.150,00</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>CONTAS ABERTAS</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h1>1578</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>MENSAGENS</h3>
+              <span class="material-icons-outlined">notification_important</span>
+            </div>
+            <h1>12</h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Top 5 maiores gastos</h2>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Lucros e Despesas</h2>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
